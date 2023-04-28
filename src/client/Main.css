@@ -1,0 +1,186 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  max-height: 200px;
+}
+
+.welcome-title {
+  font-weight: 500;
+}
+
+.welcome-subtitle {
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons .button:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.button {
+  border-radius: 3px;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-filled {
+  border: 2px solid #bf9900;
+  background-color: #bf9900;
+  color: #f4f4f4;
+}
+
+.button-outline {
+  border: 2px solid #8a9cff;
+  color: #8a9cff;
+  background-color: none;
+}
+
+code {
+  border-radius: 5px;
+  padding: 0.2rem;
+  background: #efefef;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.notes-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notes-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.notes-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.note-content {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  outline: none;
+  border: none;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-item {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  border: 1px solid #ccc;
+}
+
+.note-delete {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+  align-self: flex-end;
+}
+
+.save-btn {
+  padding: 10px 20px;
+  background-color: #F8E71C; /* Yellow color */
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Button styling on hover */
+.save-btn:hover {
+  background-color: #F5D700; /* Lighter shade of yellow on hover */
+}
+
+.note-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #e2e8f0; /* Yellow color */
+  color: #333;
+  outline: none;
+  margin-right: 5px;
+}
+
+.link {
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px dotted #666; /* Dotted underline */
+}
+
+.link:hover {
+  color: #888; /* Lighter shade of gray color on hover */
+}

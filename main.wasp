@@ -1,0 +1,32 @@
+app MyApp {
+  wasp: {
+    version: "^0.10.0"
+  },
+  title: "MyApp"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import Main from "@client/MainPage.jsx"
+}
+
+entity Note {=psl
+    id          Int     @id @default(autoincrement())
+    content String
+psl=}
+
+query getNotes {
+
+  fn: import { getNotes } from "@server/queries.js",
+  entities: [Note]
+}
+
+action createNote {
+  fn: import { createNote } from "@server/actions.js",
+  entities: [Note]
+}
+
+action updateNote {
+  fn: import { updateNote } from "@server/actions.js",
+  entities: [Note]
+}
